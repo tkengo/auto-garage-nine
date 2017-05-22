@@ -1,0 +1,95 @@
+@media screen and (max-width: 900px) {
+
+  .background {
+    position: relative;
+    top: -200px;
+    height: auto;
+  }
+  #header-message {
+    display: none;
+  }
+  .top-image {
+    position: relative;
+    top: 0;
+    height: auto;
+    /* background-color: #ccc; */
+  }
+  .top-image img {
+    position: relative;
+    top: 80px;
+    /* display: none; */
+  }
+  .container {
+    width: 420px;
+    z-index: 4;
+  }
+
+  .header-wrapper {
+    background-color: #fff;
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.5;
+  }
+  ul.header-menu {
+    position: relative;
+    left: -20px;
+  }
+  ul.header-menu li {
+    line-height: 40px;
+    font-size: 12px;
+  }
+  ul.header-menu li a.menu {
+    line-height: 40px;
+  }
+
+  .contents {
+    position: relative;
+    top: -200px;
+  }
+  .contents-wrapper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  li.items-container {
+    width: 100%;
+  }
+
+  #item-schedule-frame {
+    width: 100%;
+    height: 500px;
+  }
+
+  .flow-box {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  footer {
+    padding: 6px 10px;
+    font-size: 12px;
+    position: relative;
+    bottom: -200px;
+    margin: 0;
+  }
+  footer .footer-box {
+    width: 100%;
+  }
+  ul.footer-menu li {
+    margin: 0 0 0 4px;
+  }
+  .footer-auto-garage {
+    font-size: 12px;
+  }
+  footer .footer-box img.facebook {
+    margin: -1px 0 0 3px;
+  }
+}

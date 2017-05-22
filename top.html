@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
   <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-  <link rel="stylesheet" id="jquery-style-css" href="./common.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./common.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./sp.css" type="text/css" media="all">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <title>オートガレージナイン レンタカー</title>
 </head>
@@ -25,10 +27,10 @@
           <li><a href="#" class="menu">オートガレージナインについて</a></li>
         </ul>
       </header>
-      <div style="text-align:center;">
-        <div style="font-size:26px;font-weight:500;margin-top:20px;"><span class="title">家族との旅行</span>に最適なレンタカー</div>
-        <div style="font-size:20px;margin-top:20px;">すぐに使える、ずっと使える</div>
-      </div>
+    </div>
+    <div id="header-message">
+      <div style="font-size:26px;font-weight:500;margin-top:20px;"><span class="title">家族との旅行</span>に最適なレンタカー</div>
+      <div style="font-size:20px;margin-top:20px;">すぐに使える、ずっと使える</div>
     </div>
   </div>
   <div class="contents">
@@ -165,13 +167,11 @@
       <div class="footer-box">
         <a href="#"><img class="logo" src="./images/logo.png" alt="オートガレージナイン" border="0" /></a>
         <div style="height: 120px;vertical-align: middle;display: table-cell;">
-          <div style="font-size: 20px;">
-            <div style="float:left">オートガレージナイン</div>
-            <a href="https://www.facebook.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AC%E3%83%AC%E3%83%BC%E3%82%B8-%E3%83%8A%E3%82%A4%E3%83%B3-1401205856763346/" target="_blank">
-              <img class="facebook" src="./images/facebook-logo.png" alt="Facebookアカウント" border="0" />
-            </a>
-          </div>
-          090-xxxx-xxxx
+          <div class="footer-auto-garage" style="float:left">オートガレージナイン</div>
+          <a href="https://www.facebook.com/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AC%E3%83%AC%E3%83%BC%E3%82%B8-%E3%83%8A%E3%82%A4%E3%83%B3-1401205856763346/" target="_blank">
+            <img class="facebook" src="./images/facebook-logo.png" alt="Facebookアカウント" border="0" />
+          </a>
+          <div>090-xxxx-xxxx</div>
         </div>
         <ul class="footer-menu">
           <li><a href="#" target="_blank">カーセンサーnet</a></li>
@@ -187,6 +187,7 @@
       </div>
     </footer>
   </div>
+
   <script type="text/javascript">
     $(document).ready(function() {
       $('ul.qa > li.question').click(function() {

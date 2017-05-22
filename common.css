@@ -100,6 +100,9 @@ ul.header-menu li {
   margin: 0 16px;
 }
 ul.header-menu li a.menu {
+  border-width: 0 0 3px 0;
+  border-color: transparent;
+  border-style: solid;
   line-height: 40px;
   display: inline-block;
 }
@@ -107,6 +110,12 @@ ul.header-menu li a.menu:hover {
   border-width: 0 0 3px 0;
   border-color: #ff2a00;
   border-style: solid;
+}
+
+#header-message {
+  text-align:center;
+  position: relative;
+  z-index: 20;
 }
 
 .contents {
@@ -120,7 +129,7 @@ ul.header-menu li a.menu:hover {
   padding-top: 30px;
 }
 
-.items-container {
+li.items-container {
   width:320px;
   text-align:center;
   float: left;
@@ -289,4 +298,7 @@ ul.footer-menu li {
 }
 ul.footer-menu li a:hover {
   text-decoration: underline;
+}
+.footer-auto-garage {
+  font-size: 20px;
 }
