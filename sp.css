@@ -5,6 +5,9 @@
     top: -200px;
     height: auto;
   }
+  .background2 {
+    position: relative;
+  }
   #header-message {
     display: none;
   }
@@ -91,5 +94,36 @@
   }
   footer .footer-box img.facebook {
     margin: -1px 0 0 3px;
+  }
+
+  .item-image-container .item-description {
+    padding-top: 16px;
+    height: auto;
+  }
+  .item-image-container img.item-image {
+    float: none;
+  }
+  .item-image-container img.item-image2 {
+    float: none;
+    width: 360px;
+    height: 300px;
+  }
+
+  .modern-table {
+    width: 100%;
+  }
+
+  .pc-table {
+    display: none;
+  }
+  .sp-table {
+    display: table;
+  }
+  .sp-view {
+    display: block;
+  }
+
+  .thumbnail-wrapper {
+    width:100%;
   }
 }
