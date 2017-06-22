@@ -27,39 +27,51 @@
   </div>
   <div class="contents-wrapper">
     <h1><span class="title">アルファード</span></h1>
-    <p class="center">テキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtext</p>
+    <p class="center">ちょっと大人数での移動や旅にも便利な８人乗りアルファードでゆったりと目的地に。みんなでわいわい楽しい旅をサポートします。</p>
     <div class="item-image-container">
       <img class="item-image2" src="./images/cars/detail2-1.jpg" border="0" alt="内装" />
       <div class="item-description">
-        <div class="item-description-title">説明のタイトル説明のタイトル</div>
-        <p>テキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtext</p>
+        <div class="item-description-title">アルファード</div>
+        <p class="js-text js-text-1">３列目シート跳ね上げ時。荷物もたくさん持ち込めます。</p>
+        <p class="js-text js-text-2" style="display:none;">３列目シートへ乗り込みイメージ</p>
+        <p class="js-text js-text-3" style="display:none;">室内風景</p>
+        <p class="js-text js-text-4" style="display:none;">３列目シート肘置き展開時</p>
+        <p class="js-text js-text-5" style="display:none;">２列目シート肘置きドリンクホルダー展開時</p>
+        <p class="js-text js-text-6" style="display:none;">カーナビ、バックモニター　地デジ＆ＤＶＤビデオ再生可能</p>
+        <p class="js-text js-text-7" style="display:none;">後席フリップダウンモニター</p>
+        <p class="js-text js-text-8" style="display:none;"></p>
+        <p class="js-text js-text-9" style="display:none;">両側パワースライドドア</p>
       </div>
     </div>
     <div style="clear:both;"></div>
     <div class="thumbnail-wrapper">
       <div style="width:486px;position:absolute;" class="thumbnail-area">
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-1.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-2.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-3.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-4.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-5.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-6.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-7.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-8.jpg"  border="0" alt="サムネイル" />
-        <img style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-9.jpg"  border="0" alt="サムネイル" />
+        <img data-index="1" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-1.jpg"  border="0" alt="サムネイル" />
+        <img data-index="2" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-2.jpg"  border="0" alt="サムネイル" />
+        <img data-index="3" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-3.jpg"  border="0" alt="サムネイル" />
+        <img data-index="4" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-4.jpg"  border="0" alt="サムネイル" />
+        <img data-index="5" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-5.jpg"  border="0" alt="サムネイル" />
+        <img data-index="6" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-6.jpg"  border="0" alt="サムネイル" />
+        <img data-index="7" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-7.jpg"  border="0" alt="サムネイル" />
+        <img data-index="8" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-8.jpg"  border="0" alt="サムネイル" />
+        <img data-index="9" style="width:50px;height:50px;float:left;cursor:pointer;margin-right:4px;" src="./images/cars/detail2-9.jpg"  border="0" alt="サムネイル" />
       </div>
     </div>
     <script type="text/javascript">
       $(document).ready(function() {
         $('.thumbnail-area img').click(function() {
+          var index = $(this).data('index');
           $('.item-image2').attr('src', $(this).attr('src')).css('opacity', '.4').animate({'opacity': '1'}, 'slow');;
+          $('.js-text').hide();
+          $('.js-text-' + index).show();
         });
       });
     </script>
 
     <div style="clear:both;margin-top: 50px;"></div>
     <h1><span class="title">基本仕様</span></h1>
-    <p class="center">テキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtextテキストtext</p>
+    <p class="center"></p>
+    <!--
     <table class="pc-table modern-table" cellpadding="0" cellspacing="0">
       <tr>
         <th>項目1</th><td>ないよう内容</td>
@@ -114,78 +126,45 @@
         <th>項目10</th><td>ないよう内容</td>
       </tr>
     </table>
+    -->
 
     <div style="margin-top: 20px;"></div>
     <table class="pc-table modern-table checked" cellpadding="0" cellspacing="0">
       <tr>
-        <td class="checked">装備1</td>
-        <td class="checked">装備2</td>
-        <td class="unchecked">装備3</td>
-        <td class="checked">装備4</td>
-        <td class="unchecked">装備5</td>
+        <td class="checked">カーナビ</td>
+        <td class="checked">地デジ</td>
+        <td class="checked">DVDビデオ再生</td>
+        <td class="checked">後席フリップダウンモニター</td>
+        <td class="checked">ETC</td>
       </tr>
       <tr>
-        <td class="checked">装備6</td>
-        <td class="unchecked">装備7</td>
-        <td class="unchecked">装備8</td>
-        <td class="checked">装備9</td>
-        <td class="unchecked">装備10</td>
-      </tr>
-      <tr>
-        <td class="checked">装備11</td>
-        <td class="checked">装備12</td>
-        <td class="unchecked">装備13</td>
-        <td class="checked">装備14</td>
-        <td class="checked">装備15</td>
-      </tr>
-      <tr>
-        <td class="checked">装備16</td>
-        <td class="unchecked">装備17</td>
-        <td class="unchecked">装備18</td>
-        <td class="checked">装備19</td>
-        <td class="unchecked">装備20</td>
+        <td class="checked">バックカメラ</td>
+        <td class="checked">両側電動スライドドア</td>
+        <td class="checked">スマートキー</td>
+        <td class="checked">8人乗り</td>
+        <td class="checked"></td>
       </tr>
     </table>
     <table class="sp-table modern-table checked" cellpadding="0" cellspacing="0">
       <tr>
-        <td class="checked">装備1</td>
-        <td class="checked">装備2</td>
+        <td class="checked">カーナビ</td>
+        <td class="checked">地デジ</td>
       </tr>
       <tr>
-        <td class="unchecked">装備3</td>
-        <td class="checked">装備4</td>
+        <td class="checked">DVDビデオ再生</td>
+        <td class="checked">後席フリップダウンモニター</td>
       </tr>
       <tr>
-        <td class="unchecked">装備5</td>
-        <td class="checked">装備6</td>
+        <td class="checked">ETC</td>
+        <td class="checked">バックカメラ</td>
       </tr>
       <tr>
-        <td class="unchecked">装備7</td>
-        <td class="unchecked">装備8</td>
+        <td class="checked">両側電動スライドドア</td>
+        <td class="checked">スマートキー</td>
       </tr>
       <tr>
-        <td class="checked">装備9</td>
-        <td class="unchecked">装備10</td>
-      </tr>
-      <tr>
-        <td class="checked">装備11</td>
-        <td class="checked">装備12</td>
-      </tr>
-      <tr>
-        <td class="unchecked">装備13</td>
-        <td class="checked">装備14</td>
-      </tr>
-      <tr>
-        <td class="checked">装備15</td>
-        <td class="checked">装備16</td>
-      </tr>
-      <tr>
-        <td class="unchecked">装備17</td>
-        <td class="unchecked">装備18</td>
-      </tr>
-      <tr>
-        <td class="checked">装備19</td>
-        <td class="unchecked">装備20</td>
+        <td class="checked">8人乗り</td>
+        <td class="checked"></td>
       </tr>
     </table>
 
