@@ -116,6 +116,7 @@ ul.header-menu li a.menu:hover {
   text-align:center;
   position: relative;
   z-index: 20;
+  text-shadow: 2px 2px 1px #fff;
 }
 
 .contents {
@@ -400,4 +401,16 @@ ul.footer-menu li a:hover {
   margin-top:4px;
   position:relative;
   height:50px;
+}
+
+.add-friend-pc {
+  text-align: center;
+}
+.add-friend-sp {
+  display: none;
+}
+.qr-code {
+  width:100px;
+  height:100px;
+  margin-bottom:-20px;
 }

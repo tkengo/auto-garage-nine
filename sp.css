@@ -23,10 +23,14 @@
     /* display: none; */
   }
   .container {
-    width: 420px;
+    width: 100%;
     z-index: 4;
   }
 
+  header.header .logo {
+    float: left;
+    margin: 0 -20px 0 -10px;
+  }
   .header-wrapper {
     background-color: #fff;
     height: 130px;
@@ -37,11 +41,11 @@
   }
   ul.header-menu {
     position: relative;
-    left: -20px;
   }
   ul.header-menu li {
     line-height: 40px;
     font-size: 12px;
+    margin: 0 10px;
   }
   ul.header-menu li a.menu {
     line-height: 40px;
@@ -125,5 +129,13 @@
 
   .thumbnail-wrapper {
     width:100%;
+  }
+
+  .add-friend-pc {
+    display: none;
+  }
+  .add-friend-sp {
+    text-align: center;
+    display: block;
   }
 }
