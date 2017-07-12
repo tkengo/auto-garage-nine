@@ -91,7 +91,8 @@
     width: 100%;
   }
   ul.footer-menu li {
-    margin: 0 0 0 4px;
+    margin: 0 4px 12px 0;
+    font-size: 12px;
   }
   .footer-auto-garage {
     font-size: 12px;
