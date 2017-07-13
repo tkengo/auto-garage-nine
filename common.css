@@ -1,4 +1,4 @@
-/* --------------------------------------------------------------------------
+  /* --------------------------------------------------------------------------
  * .container と .contents-wrapper の width は合わせる
  * .background の height と .top-image の height-top の値は合わせる
  * .contents の top は .top-image の height から top を引いた値に合わせる
@@ -211,7 +211,7 @@ img.item:hover {
   margin: 46px 0 0 30px;
   float: left;
 }
-.flow-box p {
+.flow-box p, .flow-box div.hoge {
   height: 220px;
   display: table-cell;
   vertical-align: middle;
