@@ -383,7 +383,7 @@ ul.footer-menu li a:hover {
 .modern-table td.number {
   text-align: center;
 }
-.modern-table td.number:before, .modern-table td.number > div:before {
+.modern-table td.number:before {
   content: '￥';
 }
 
