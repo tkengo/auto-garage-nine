@@ -5,26 +5,6 @@
  * .item-container の width は .container の width の 1/3 くらいにする
  * -------------------------------------------------------------------------- */
 
-html, body, ul, li, table, tr, td {
-  margin: 0;
-  padding: 0;
-  font-family: "Mplus 1p";
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-p {
-  font-weight: 300;
-}
-
-ul, li {
-  list-style: none;
-}
-
 span.title {
   border-width: 0 0 3px 0;
   border-color: #333;
@@ -84,39 +64,6 @@ hr {
   width: 1000px;
   margin: 0 auto;
   z-index: 2;
-}
-.header {
-  height: 120px;
-}
-header.header .logo {
-  float: left;
-}
-
-ul.header-menu li {
-  line-height: 120px;
-  font-weight: 400;
-  font-size: 15px;
-  float: left;
-  margin: 0 16px;
-}
-ul.header-menu li a.menu {
-  border-width: 0 0 3px 0;
-  border-color: transparent;
-  border-style: solid;
-  line-height: 40px;
-  display: inline-block;
-}
-ul.header-menu li a.menu:hover {
-  border-width: 0 0 3px 0;
-  border-color: #ff2a00;
-  border-style: solid;
-}
-
-#header-message {
-  text-align:center;
-  position: relative;
-  z-index: 20;
-  text-shadow: 2px 2px 1px #fff;
 }
 
 .contents {
@@ -216,92 +163,6 @@ img.item:hover {
   display: table-cell;
   vertical-align: middle;
   padding: 0 20px;
-}
-
-ul.qa li {
-  padding: 12px;
-  width: 100%;
-  box-sizing: border-box;
-}
-ul.qa li.question {
-  margin: 3px 0 0 0;
-  background-color: #f3f3f3;
-  position: relative;
-  cursor: pointer;
-  transition-timing-function: cubic-bezier(.2, .4, .7, .8);
-  transition-duration: .2s;
-  transition-property: background-color, border-color, color;
-}
-ul.qa li.question:hover {
-  background-color: #f9f9f9;
-}
-ul.qa li.answer {
-  margin: 0;
-  display: none;
-  background-color: #fff;
-}
-ul.qa li img.arrow {
-  height: 12px;
-  position: absolute;
-  top: 18px;
-  right: 14px;
-}
-
-.map {
-  /* width: 600px; */
-  /* height: 450px; */
-  margin: 0 auto;
-}
-.map ul.about {
-  margin: 10px;
-}
-.map ul.about li {
-  font-size: 15px;
-  margin: 4px 0 0 0;
-  padding: 0 0 0 4px;
-  font-weight: 300;
-  /* border-width: 0 0 0 5px; */
-  /* border-style: solid; */
-  /* border-color: #dcdcdc; */
-}
-.map ul.about li span {
-  font-weight: 500;
-}
-
-footer {
-  margin: 160px 0 0 0;
-  padding: 6px 0;
-  height: 200px;
-  background-color: #dcdcdc;
-  text-align: center;
-}
-footer .footer-box {
-  margin: 0 auto;
-  width: 800px;
-  text-align: left;
-  font-weight: 300;
-  position: relative;
-}
-footer .footer-box img.logo {
-  height: 120px;
-  float: left;
-}
-footer .footer-box img.facebook {
-  margin: 5px 0 0 3px;
-  height: 20px;
-}
-
-ul.footer-menu li {
-  margin: 0 6px 6px 0;
-  float: left;
-  font-size: 15px;
-  font-weight: 300;
-}
-ul.footer-menu li a:hover {
-  text-decoration: underline;
-}
-.footer-auto-garage {
-  font-size: 20px;
 }
 
 .item-image-container {

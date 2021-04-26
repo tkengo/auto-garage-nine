@@ -1,0 +1,254 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div, span, li {
+  font-family: "Open Sans", "M PLUS Rounded 1c";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.area-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: solid 5px black;
+  position: relative;
+  box-sizing: border-box;
+}
+.header-menu-list:hover {
+  background-color: #333;
+  border-bottom-color: red;
+}
+.header-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+.header-menu-item .ja {
+  font-size: 14px;
+  color: white;
+}
+.header-menu-item .en {
+  font-size: 12px;
+  color: #aaa;
+}
+.header-menu-list:hover > .header-menu-item-children {
+  display: block;
+}
+.header-menu-item-children {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 150px;
+  z-index: 200;
+  background-color: black;
+}
+.header-menu-item-children a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.header-menu-item-children a:hover {
+  background-color: #333;
+}
+
+.background {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.background-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.background-item {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
+  text-align: center;
+  text-shadow:
+  2px  2px 1px #000000,
+  -2px  2px 1px #000000,
+  2px -2px 1px #000000,
+  -2px -2px 1px #000000,
+  2px  0px 1px #000000,
+  0px  2px 1px #000000,
+  -2px  0px 1px #000000,
+  0px -2px 1px #000000;
+}
+.background-title {
+  font-size: 68px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+.background-caption {
+  font-size: 16px;
+}
+.background-social-icons {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 110px;
+  height: 50px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 100px;
+}
+.background-social-icons img, .background-social-icons a {
+  width: 32px;
+  height: 32px;
+}
+
+.add-friend-pc {
+  padding: 30px 0 30px 0;
+  background-color: white;
+  text-align: center;
+}
+.qr-code {
+  width:100px;
+  height:100px;
+  margin-bottom:-20px;
+}
+
+.work {
+  padding: 60px 0 90px 0;
+  background-color: #E0DCC3;
+}
+.work-container {
+  width: 800px;
+  margin: auto;
+}
+.work-item {
+  display: flex;
+  margin-top: 40px;
+}
+.work-item-icon {
+  width: 120px;
+  height: 120px;
+  border: solid 3px black;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 120px;
+}
+.work-item-icon img {
+  width: 80px;
+  height: 80px;
+}
+.work-item-content {
+  margin-left: 20px;
+}
+.work-item-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.rentacar {
+  padding: 30px 0 90px 0;
+  display: flex;
+  justify-content: center;
+}
+.rentacar-container {
+  width: 1000px;
+}
+.rentacar-grid {
+  display: flex;
+  flex-direction: column;
+}
+.rentacar-grid-row {
+  display: flex;
+}
+.rentacar-grid img, .rentacar-grid a {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+}
+.rentacar-caption {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: 60px 0 20px 0;
+}
+
+.company {
+  padding: 60px 0 90px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #E0DCC3;
+}
+.company-container {
+  width: 1000px;
+}
+
+footer {
+  padding: 6px 0;
+  height: 200px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+footer .footer-box {
+  margin: 0 auto;
+  width: 800px;
+  text-align: left;
+  font-weight: 300;
+  position: relative;
+}
+footer .footer-box img.logo {
+  height: 120px;
+  float: left;
+}
+footer .footer-box img.facebook {
+  margin: 5px 0 0 3px;
+  height: 20px;
+}
+
+ul.footer-menu li {
+  margin: 0 6px 6px 0;
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+}
+ul.footer-menu li a:hover {
+  text-decoration: underline;
+}
+.footer-auto-garage {
+  font-size: 20px;
+}
